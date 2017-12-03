@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+
+main:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.4)
+}
+
+nav {
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#menu-btn {
+    color: #fff;
+    font-size: 22px;
+    float: left;
+}
+
+#menu-btn i {
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    background: #fff;
+    margin: 0;
+    top: 52px;
+    left: 5px;
+    width: 40%;
+    display: none;
+}
+
+#menu:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: -10px;;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+#logo {
+    float: right;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#weather-box {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+#location {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#temperature {
+    font-weight: 300;
+    font-size: 65px;
+}
+
+#info {
+    font-weight: 500;
+}
+
+#info-box {
+    padding: 20px;
+}
+
+#info-box h2 {
+    text-align: center;
+    color: #7f8c8d;
+    letter-spacing: 1.5px;
+    font-weight: 500;    
+}
+
+#about {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ecf0f1;
+    height: 100vh;
+    z-index: 99999;
+    display: none;
+}
+
+#top-bar {
+    background: #2980b9;
+    height: 50px;
+}
+
+#back-btn {
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 23px;
+    float: left;
+    line-height: 50px;
+}
+
+#top-bar h4 {
+    color: #fff;
+    line-height: 50px;
+    overflow: hidden;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#about-section {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0 5px ;
+}
+
+/* Responsive */
+
+@media(max-width: 700px){
+    #weather-icon {
+    width: 190px;
+    height: 190px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #weather-box {
+        top: 20%;
+    }
+    
+    #weather-icon {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+
+
+
